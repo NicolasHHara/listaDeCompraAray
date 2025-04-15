@@ -1,0 +1,51 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.base{
+    background-color: bisque;
+    height: 18rem;
+    width: 16%;
+    border-radius: 9px;
+    float: left;
+}
+img{
+    height: 7rem;
+    width: 90%;
+    border-radius: 9px;
+    margin-top: 15px;   
+    margin-left: 19px;
+}
+h1{
+    text-align: center;
+}
+p{
+    margin-left: 20px;
+    float: left;
+}
+.btnComprar:hover{
+    cursor: pointer;
+}
+.btnComprar{
+    height: 1.5rem;
+    margin-top: 13px;
+    margin-left: 30px;
+    width: 4.5rem;
+    background-color: crimson;
+    border: none;
+    border-radius: 8px;
+}
+#btnAside:hover{
+    cursor: pointer;
+}
+#btnAside{
+    height: 10vh;
+    width: 10vh;
+    margin-left: 78%;
+    margin-top: 10px;
+    background-color: crimson;
+    border: none;
+    border-radius: 8px;
+}
+#imgAside{
+    margin-top: 0;
+}
