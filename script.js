@@ -8,38 +8,15 @@ const produtos = [
     {
         nome: "Chocolate Amargo",
         preco: 15.50,
-        imagem: ""
+        imagem: "",
     },
     {
         nome: "Caixa de Bombons",
         preco: 22.00,
-        imagem: ""
+        imagem: "",
     },
 ];
 
-//alert(produtos[0].nome)  
-//alert(produtos.length)            tamanho do array
-
-/*const container = document.getElementById("container");    
-
-produtos.forEach(element => {
-    
-});
-
-  
-    let novaCaixa = document.createElement("div");              //criar uma div 
-    novaCaixa.textContent = caixa;
-    alert(caixa)
-
-
-
-// usar push para empurrar os itens para o carrinho
-
-
-function compra(){
-    let aside = document.getElementById("aside");
-}
-*/
 
 
 
@@ -64,3 +41,42 @@ produtos.forEach(produto => {                           //pega todos os itens qu
         container.appendChild(novaCaixa);  //coloca esse elemento dentro do container como filho
                                             //para que eles nao fiquem em cima do primeiro produto (criado no HTMl)
 }); 
+
+
+
+//alert(produtos[0].nome)  
+//alert(produtos.length)            tamanho do array
+
+/*const container = document.getElementById("container");    
+
+produtos.forEach(element => {
+    
+});
+
+  
+    let novaCaixa = document.createElement("div");              //criar uma div 
+    novaCaixa.textContent = caixa;
+    alert(caixa)
+
+
+
+// usar push para empurrar os itens para o carrinho
+
+*/
+
+function compra(){
+    const novaCaixaAside = document.createElement("div");
+    novaCaixaAside.classList.add("baseAside");
+
+    novaCaixaAside.innerHTML = `                                     
+        <img src="${produto.imagem}" alt="">
+        <h1>${produto.nome}</h1>                                         
+        <p>R$ ${produto.preco.toFixed(2)}</p>                    
+        <button class="btnComprar" onclick="compra()">Comprar</button>
+    `;
+                                            
+
+
+        container.appendChild(novaCaixaAside);
+                                          
+}
