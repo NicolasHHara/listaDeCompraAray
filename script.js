@@ -1,5 +1,4 @@
-
-const produtos = [
+const produtos = [              //array
     {
         nome: "Ovo de Páscoa",
         preco: 30.00,
@@ -43,8 +42,10 @@ produtos.forEach(produto => {                           //pega todos os itens qu
 
 
 
+
+
 //alert(produtos[0].nome)  
-//alert(produtos.length)            tamanho do array
+//alert(produtoss.length)            tamanho do array
 
 /*const container = document.getElementById("container");    
 
@@ -54,8 +55,6 @@ produtos.forEach(element => {
 
   
     let novaCaixa = document.createElement("div");              //criar uma div 
-    novaCaixa.textContent = caixa;
-    alert(caixa)
 
 
 
@@ -63,7 +62,7 @@ produtos.forEach(element => {
 
 */
 
-function compra(){
+/*function compra(){
     const novaCaixaAside = document.createElement("aside");
     novaCaixaAside.classList.add("containerAside");
     
@@ -73,8 +72,54 @@ function compra(){
                 <path d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1"/>
             </svg>
         </div>`;
+
                                             
 
         container.appendChild(novaCaixaAside);
-                                          
+    }
+        criava varios carrinhos um em cima do outro
+*/
+
+
+    function compra() {
+        const novaCaixaAside = document.createElement("aside");
+        novaCaixaAside.classList.add("containerAside");
+    
+        novaCaixaAside.innerHTML = `                                     
+            <div class="caixaAside">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                    <path d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1"/>
+                </svg>
+                <button id="btnExitAside"></button>
+            </div>
+        `;
+        
+        if (document.querySelector(".containerAside")) {            //verifica se ja existe um aside
+            return; //se existir, nao repete
+        }
+
+        const container = document.getElementById("listagem");   //pega a variavel declarada la em cima ("listagem") e transforma na variavel container
+        container.appendChild(novaCaixaAside);          //funciona da mesma forma anteriormente, para que o Aside se torne filho do contaienr
+    }
+
+
+    
+/*let resposta = "sim";
+
+while (resposta === "sim") {
+
+    console.log("Olá! Quer ser cumprimentado novamente?");
+
+    resposta = prompt("Digite 'sim' para continuar ou qualquer outro valor para sair:");
+
 }
+*/
+
+//caso o usuario digite sim aparecera o comentario novamente, se escrever outra coisa nao aparecera a pergunta
+
+
+/*do {
+
+    // código a ser executado
+
+} while (condição);*/
