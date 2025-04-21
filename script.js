@@ -84,7 +84,11 @@ produtos.forEach(element => {
     function compra() {
         const novaCaixaAside = document.createElement("aside");
         novaCaixaAside.classList.add("containerAside");
-    
+        
+        if (document.querySelector(".containerAside")) {            //verifica se ja existe um aside
+            return; //se existir, nao repete
+        }
+
         novaCaixaAside.innerHTML = `                                     
             <div class="caixaAside">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2-fill" viewBox="0 0 16 16">
@@ -93,13 +97,11 @@ produtos.forEach(element => {
                 <button id="btnExitAside"></button>
             </div>
         `;
-        
-        if (document.querySelector(".containerAside")) {            //verifica se ja existe um aside
-            return; //se existir, nao repete
-        }
+        document.getElementById('listagem').appendChild(novaCaixaAside);   //funciona da mesma forma anteriormente, para que o Aside se torne filho do contaienr
+}
 
-        const container = document.getElementById("listagem");   //pega a variavel declarada la em cima ("listagem") e transforma na variavel container
-        container.appendChild(novaCaixaAside);          //funciona da mesma forma anteriormente, para que o Aside se torne filho do contaienr
+    function ("aside"){
+
     }
 
 

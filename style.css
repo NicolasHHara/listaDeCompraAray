@@ -101,3 +101,10 @@ main{
     display: flex;
     flex: 1;
 }
+.baseAside{
+    position: fixed;
+    width: 10%;
+    height: 15%;
+    background-color: black;
+    display: flex;
+}
