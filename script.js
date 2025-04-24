@@ -120,14 +120,15 @@ function compra() {
 
 
 
-    produtos.forEach(produto => {                           //pega todos os itens que esta deNtro do array "produto"
+    produtos.forEach((produto, index) => {                           //pega todos os itens que esta deNtro do array "produto"
         const novaCaixaProduto = document.createElement("div");        //cria mais uma div chamada novaCaixa
         novaCaixaProduto.classList.add("baseAside");                        //transforma a nova variavel "novaCaixa" em uma classe ja existente a base
 
         novaCaixaProduto.innerHTML = `                                     
             <img src="${produto.imagem}" alt="">
             <h1>${produto.nome}</h1>                                         
-            <p>R$ ${produto.preco.toFixed(2)}</p>`;
+            <p>R$ ${produto.preco.toFixed(2)}</p>
+`;
 
         
         //no innerHTML ele cria a div "novaCaixa" no HTML
