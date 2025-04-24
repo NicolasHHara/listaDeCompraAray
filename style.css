@@ -105,14 +105,20 @@ main{
     height: 20px;
 }
 .baseAside{
-    
-    width: 100%;
+    width: 20%;
     height: 15%;
     background-color: cadetblue;
     color: black;
     display: flex;
+    position: fixed;
 }
 .baseAside img{
     height: 30px;
-    width: 50%px;
+    width: 50%;
 }
+.novaCaixaProdutoBase{
+    background-color: brown;
+    width: 30%;
+    height: 5rem;
+}
+produtosAside
