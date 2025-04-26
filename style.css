@@ -68,7 +68,7 @@ main{
 
 
 /*                  Aside       */
-#imgAside{
+.imgAside{
     margin-top: 0;
 }
 
@@ -88,7 +88,7 @@ main{
     right: 0;
     width: 400px;
     height: 100vh;
-    background-color: white;
+    background-color: violet;
     box-shadow: -2px 0 10px rgba(0,0,0,0.1);
     padding: 20px;
     z-index: 1000;
@@ -121,4 +121,3 @@ main{
     width: 30%;
     height: 5rem;
 }
-produtosAside
