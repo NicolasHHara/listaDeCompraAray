@@ -25,10 +25,9 @@ const produtos = [
 // array do carrinho de compras
 const produtosAside = new Array();
 
-
-// percorre todos os produtos do array e cria a listagem
 let contador = 0;
 
+// percorre todos os produtos do array e cria a listagem
 produtos.forEach(produto => {
     //cria mais uma div chamada novaCaixa
     const novaCaixa = document.createElement("div");
@@ -49,12 +48,12 @@ produtos.forEach(produto => {
     //para que eles nao fiquem em cima do primeiro produto (criado no HTMl)
     contador++;
 });
-function openAise(produtox){
+
+function openAise(produto){
     // declara a classe
     const novaCaixaAside = document.createElement("aside");
     // adiciona o estilo para ele
     novaCaixaAside.classList.add("containerAside");
-
     //verifica se ja existe um aside
     if (document.querySelector(".containerAside")) {
         return; 
@@ -123,13 +122,15 @@ function compra(item) {
 
         //novaCaixaProdutoBase ser filho do containerAside
         containerAside.appendChild(novaCaixaProdutoBase);
+
+    let contador = 4;;
+        for (let i = 0; i < 2; i++) {
+        console.log(contador);
+    }
     });
 }
 
-function closeAside(){
-    containerAside.close()
-    
-}
+
 
 
 
