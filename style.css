@@ -65,10 +65,10 @@ p{
     cursor: pointer;
 }
 #btnAbreAside{
-    height: 10vh;
-    width: 10vh;
-    margin-left: 78%;
-    margin-top: 10px;
+    height: 4rem;
+    width: 4rem;
+    margin-left: 90%;
+    margin-top: 2rem;
     background-color: crimson;
     border: none;
     border-radius: 8px;
@@ -80,12 +80,13 @@ p{
     position: fixed;
     top: 0;
     right: -550px;
-    width: 500px;
+    width: 600px;
     height: 100%;
-    background-color: violet;
-    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+    box-shadow: 3px  3px 3px 6px #4a4a4a1f;
     padding: 20px;
     z-index: 1000;
+    opacity: 1;
 }
 #btnExitAside{
     background-color: crimson;
@@ -93,22 +94,25 @@ p{
     width: 2rem;
     display: flex;
     flex: 1;
+    border-radius: 8%;
 }
 .baseAside{
     width: 60%;
     height: 15%;
-    background-color: cadetblue;
+    background-color: none;
     color: black;
-    display: flex;
+    box-shadow: 3px  3px 3px 3px #4a4a4a1f;
     float: left;
+    border: black 2px;
 
 }
 .baseAside img{
     height: 30px;
     width: 50%;
 }
-.novaCaixaProdutoBase{
-    background-color: brown;
-    width: 30%;
-    height: 5rem;
-}   
+#imgside{
+    height: 1rem;
+}
+.btnremove{
+
+}

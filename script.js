@@ -18,7 +18,7 @@ const produtos = [
     {
     nome: "Chocolate ao Leite",
     preco: 20,
-    imagem: ""
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsqQbbVU5yutLzyGZ2WCj4_Y-05K6_DqHwvXYSJ6hGAQ&s&ec=72940542"
     },
 ];
 
@@ -75,6 +75,10 @@ function atualizaAside() {
         containerProdutosAside.appendChild(novaCaixaProdutoBase);
     });
 }
+function remove(index) {
+    produtosAside.splice(index, 1);
+    atualizaAside();
+}
 
 function openAise(){
     const novaCaixaAside = document.createElement("aside");
@@ -93,20 +97,20 @@ function openAise(){
 }
 
 //variaveis que pega 
-const aside = document.getElementById("containerAside")
-const btnAbrir = document.getElementById("btnAbreAside")
-const btnFechar = document.getElementById("btnExitAside")
+const aside = document.getElementById("containerAside");
+const btnAbrir = document.getElementById("btnAbreAside");
+const btnFechar = document.getElementById("btnExitAside");
 
 
 function abrirAside (){
     aside.style.right = 0;
-    btnAbrir.style.right = "480px"
-}
-btnAbrir.addEventListener('click', abrirAside)
+};
+btnAbrir.addEventListener('click', abrirAside);
 
-function fecharAside (){
-    aside.style.right = "-550px";
+function closeAside () {
+    aside.style.right = "-100rem";
     btnAbrir.style.right = 0;
 }
 
-btnFechar.addEventListener('click', fecharAside)
+btnFechar.addEventListener('click', closeAside);
+
