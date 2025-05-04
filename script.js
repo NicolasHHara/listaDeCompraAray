@@ -113,4 +113,3 @@ function closeAside () {
 }
 
 btnFechar.addEventListener('click', closeAside);
-

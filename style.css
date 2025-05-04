@@ -79,7 +79,7 @@ p{
 .containerAside {
     position: fixed;
     top: 0;
-    right: -550px;
+    right: -700px;
     width: 600px;
     height: 100%;
     background-color: white;
@@ -87,14 +87,27 @@ p{
     padding: 20px;
     z-index: 1000;
     opacity: 1;
+    padding: 0px;
+}
+.headerAside{
+    background-color: crimson;
+    width: 100%;
+    height: 6rem;
+}
+
+.tituloAside{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    float: left;
 }
 #btnExitAside{
     background-color: crimson;
     height: 2rem;
     width: 2rem;
     display: flex;
-    flex: 1;
     border-radius: 8%;
+    margin-right: 0 auto;
 }
 .baseAside{
     width: 60%;
@@ -112,7 +125,4 @@ p{
 }
 #imgside{
     height: 1rem;
-}
-.btnremove{
-
 }
